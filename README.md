@@ -24,7 +24,7 @@ An AI-powered tool that analyzes Python code to check if it's **Python 3 compati
 
 | Layer | Technology |
 |-------|------------|
-| Frontend | React + Vite |
+| Frontend | React |
 | Backend | FastAPI (Python) |
 | Database | MongoDB |
 | AI/LLM | Google Gemini via LangChain |
@@ -182,18 +182,3 @@ cd frontend
 npm install
 npm run dev
 ```
-
----
-
-## 📝 License
-
-MIT License
-
----
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
