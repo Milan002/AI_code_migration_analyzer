@@ -7,7 +7,7 @@ function Header({ user, onLogout }) {
         <div className="header-left">
           <div className="logo">
             <span className="logo-icon">🔍</span>
-            <h1>AI Code Migration Readiness Analyzer</h1>
+            <h1>AI Code Migration Analyzer</h1>
           </div>
           <p className="tagline">
             Verify Python 2 → Python 3 migration completeness

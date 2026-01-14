@@ -1,1 +1,1 @@
-# AI Code Migration Readiness Analyzer - Backend
+# AI Code Migration Analyzer - Backend

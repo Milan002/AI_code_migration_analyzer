@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     """Application settings loaded from environment variables."""
     
     # Application
-    APP_NAME: str = "AI Code Migration Readiness Analyzer"
+    APP_NAME: str = "AI Code Migration Analyzer"
     DEBUG: bool = False
     
     # MongoDB

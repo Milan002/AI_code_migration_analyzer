@@ -150,7 +150,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <p>AI Code Migration Readiness Analyzer v1.0</p>
+        <p>AI Code Migration Analyzer v1.0</p>
       </footer>
     </div>
   )

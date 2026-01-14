@@ -1,4 +1,4 @@
-# 🔄 Python Migration Analyzer
+# 🔄 AI Code Migration Analyzer
 
 An AI-powered tool that analyzes Python code to check if it's **Python 3 compatible** or contains **Python 2 patterns**. Upload your Python files and get instant analysis with detailed reports.
 
@@ -72,7 +72,7 @@ docker-compose up --build
 ## 📁 Project Structure
 
 ```
-migration_project1/
+migration_project/
 ├── backend/                    # FastAPI Backend
 │   ├── app/
 │   │   ├── config.py          # App configuration

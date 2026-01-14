@@ -66,8 +66,8 @@ function AuthPage({ onAuthSuccess }) {
     <div className="auth-container">
       <div className="auth-card">
         <div className="auth-header">
-          <h1>🔄 Migration Analyzer</h1>
-          <p>Python 2 to Python 3 Migration Readiness Tool</p>
+          <h1>🔄 AI Code Migration Analyzer</h1>
+          <p>Python 2 to Python 3 Migration Tool</p>
         </div>
 
         <div className="auth-tabs">

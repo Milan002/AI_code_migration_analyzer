@@ -24,7 +24,7 @@ async def lifespan(app: FastAPI):
 # Create FastAPI application
 app = FastAPI(
     title=settings.APP_NAME,
-    description="Analyze Python codebases for Python 2 to Python 3 migration readiness",
+    description="AI-powered Python 2 to Python 3 code migration analyzer",
     version="1.0.0",
     lifespan=lifespan
 )
@@ -49,7 +49,7 @@ async def root():
     return {
         "name": settings.APP_NAME,
         "version": "1.0.0",
-        "description": "Python 2 to Python 3 Migration Readiness Analyzer",
+        "description": "AI Code Migration Analyzer - Python 2 to Python 3",
         "endpoints": {
             "analyze": "POST /api/migration/analyze",
             "get_report": "GET /api/migration/report/{report_id}",
