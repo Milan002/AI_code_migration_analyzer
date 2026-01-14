@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  # Frontend React Application
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5174:5173"  # Use 5174 on host to avoid conflicts
+    environment:
+      - VITE_API_URL=http://localhost:8001
+    depends_on:
+      - backend
+    networks:
+      - migration-network
+
+  # Backend FastAPI Application
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8000"  # Use 8001 on host to avoid conflicts
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017
+      - DATABASE_NAME=migration_analyzer
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+    depends_on:
+      - mongodb
+    networks:
+      - migration-network
+
+  # MongoDB Database
+  mongodb:
+    image: mongo:7.0
+    ports:
+      - "27019:27017"  # Use 27019 on host to avoid conflict with local MongoDB
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - migration-network
+
+networks:
+  migration-network:
+    driver: bridge
+
+volumes:
+  mongodb_data:
